@@ -15,24 +15,26 @@ function App() {
     setUserInput((prevValue) => {
       return {
         ...prevValue,
-        [target]: newValue,
+        [target]: +newValue,
       };
     });
   }
+
+  const inputIsValid = userInput.duration > 0
 
   return (
     <>
       <section id="user-input">
         <div className="input-group">
           <UserInputCard
-            defaultVal={userInput.initialInvestment}
+            val={userInput.initialInvestment}
             onChangeValue={handleChange}
             targ="initialInvestment"
           >
             initial investment
           </UserInputCard>
           <UserInputCard
-            defaultVal={userInput.annualInvestment}
+            val={userInput.annualInvestment}
             onChangeValue={handleChange}
             targ="annualInvestment"
           >
@@ -41,14 +43,14 @@ function App() {
         </div>
         <div className="input-group">
           <UserInputCard
-            defaultVal={userInput.expectedReturn}
+            val={userInput.expectedReturn}
             onChangeValue={handleChange}
             targ="expectedReturn"
           >
             expected return
           </UserInputCard>
           <UserInputCard
-            defaultVal={userInput.duration}
+            val={userInput.duration}
             onChangeValue={handleChange}
             targ="duration"
           >
@@ -57,7 +59,8 @@ function App() {
         </div>
       </section>
       <section>
-        <Result userInputs={userInput} />
+        {inputIsValid && <Result userInputs={userInput} />}
+        {!inputIsValid && <p className="center">Please enter a valid duration</p>}
       </section>
     </>
   );
