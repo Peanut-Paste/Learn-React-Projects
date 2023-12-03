@@ -8,3 +8,4 @@ This repository serves as a comprehensive collection of the practical projects c
 ## Projects
 1. **Starting Project**: This project focuses on the basic and fundamental of React.
 2. **Tic Tac Toe Game**: Implementing a classic Tic Tac Toe game using React. This project focuses on building React components, managing state, and handling user interactions.
+3. **Investment Calculator**: Implementing a Investment Calculator webapp using React. This project focuses on what I learnt so far without any guide or instructions to follow.
