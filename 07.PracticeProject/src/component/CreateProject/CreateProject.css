@@ -1,0 +1,49 @@
+#create-project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+input {
+  height: 30px;
+  font-size: 16px;
+}
+
+textarea {
+  font-size: 16px;
+  height: 90px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  background-color: lightgrey;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  display: inline-block;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+label.error {
+  color: red;
+}
+
+input.error {
+  background-color: rgba(242, 5, 5, 0.5);
+}
+
+textarea.error {
+  background-color: rgba(242, 5, 5, 0.5);
+}

@@ -1,0 +1,22 @@
+#task .inputs {
+	display:flex;
+	flex-direction: row;
+	gap:20px;
+	align-items: center;
+}
+
+.inputs input {
+	flex: 3;
+}
+
+.tasklist {
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0, 0.1);
+	padding: 10px 30px;
+}
+
+li span {
+	cursor: pointer;
+	text-decoration: underline;
+}

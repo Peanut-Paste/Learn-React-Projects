@@ -1,0 +1,28 @@
+#project-page {
+	/* display: flex;
+	flex-direction: column; */
+}
+
+#project-page h3 {
+	font-size: 30px;
+	margin-bottom:15px;
+}
+
+#project-page h4 {
+	font-size: 16px;
+	color: grey;
+}
+
+#project-page p {
+	font-size: 18px;
+	white-space: pre-wrap;
+}
+
+#project-page hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 3px solid #ccc;
+	margin: 1em 1em ;
+	padding:0;
+}

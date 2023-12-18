@@ -1,0 +1,37 @@
+.custom-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 0px;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark{
+	  background-color: black;
+  color: white;
+}
+
+.light:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.dark:hover {
+  background-color: black;
+  color: grey;
+  cursor: pointer;
+}
+
+.sidebutton {
+  border-radius: 0;
+  background-color: transparent;
+  color:white;
+  text-align: left;
+  width:100%;
+}
+
+.sidebutton:hover {
+  background-color: #3d3d3d;
+}
